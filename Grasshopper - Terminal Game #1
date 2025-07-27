@@ -1,0 +1,23 @@
+class Hero {
+    String name;
+    String position;
+    int health;
+    int damage;
+    int experience;
+
+    public Hero(){
+        name = "Hero";
+        position = "00";
+        health = 100;
+        damage = 5;
+        experience = 0;
+    }
+    public Hero (String name) {
+            this.name = name;
+            position = "00";
+            health = 100;
+            damage = 5;
+            experience = 0;
+    }
+
+}
