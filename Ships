@@ -1,0 +1,19 @@
+ 
+//Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+
+import java.util.Arrays;
+
+public class Counter {
+    public static int countSheeps(Boolean[] arrayOfSheeps) {
+        int count = 0;
+        for (int i = 0; i < arrayOfSheeps.length; i++) {
+            if (arrayOfSheeps[i] != null) {
+              if (arrayOfSheeps[i]){
+            count++;
+                }
+            }
+
+        }
+        return count;
+    }
+}
