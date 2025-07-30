@@ -1,0 +1,21 @@
+//Given an integer x, return true if x is a palindrome, and false otherwise.
+
+import java.util.ArrayList;
+
+class Solution {
+    public boolean isPalindrome(int x) {
+        ArrayList<Integer> digits = new ArrayList<>();
+        ArrayList<Integer> digitsRev = new ArrayList<>();
+        if (x < 0) {
+            return false;
+        }
+        while (x > 0) {
+            digits.add(x % 10);
+            x /= 10;
+        }
+        for (int digit : digits) {
+            digitsRev.addFirst(digit);
+        }
+        return digits.equals(digitsRev);
+    }
+}
